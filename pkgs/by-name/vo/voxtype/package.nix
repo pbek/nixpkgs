@@ -54,6 +54,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   pname = "voxtype";
   version = "0.7.5";
 
+  __structuredAttrs = true;
+
   src = fetchFromGitHub {
     owner = "peteonrails";
     repo = "voxtype";
