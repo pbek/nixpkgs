@@ -173,7 +173,10 @@ rustPlatform.buildRustPackage (finalAttrs: {
     downloadPage = "https://voxtype.io/download/";
     changelog = "https://github.com/peteonrails/voxtype/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ DuskyElf ];
+    maintainers = with lib.maintainers; [
+      DuskyElf
+      pbek
+    ];
     platforms = lib.platforms.linux;
     mainProgram = "voxtype";
   };
